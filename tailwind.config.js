@@ -17,6 +17,10 @@ module.exports = {
       padding : '1rem' // 16px
     },
     extend: {
+      colors : {
+        'primary' : '#00c876',
+        'secondary' : '#201630',
+      },
       fontFamily: {
       'montserrat' : ['Montserrat'],
     },
