@@ -599,20 +599,104 @@ video {
   top: 0.75rem;
 }
 
-.right-2 {
-  right: 0.5rem;
+.-right-0 {
+  right: -0px;
 }
 
 .-top-1 {
   top: -0.25rem;
 }
 
+.-right-3 {
+  right: -0.75rem;
+}
+
+.-right-0\.5 {
+  right: -0.125rem;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.right-1 {
+  right: 0.25rem;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
+.right-16 {
+  right: 4rem;
+}
+
+.right-12 {
+  right: 3rem;
+}
+
+.-right-10 {
+  right: -2.5rem;
+}
+
+.-right-1 {
+  right: -0.25rem;
+}
+
+.-right-2 {
+  right: -0.5rem;
+}
+
+.right-36 {
+  right: 9rem;
+}
+
 .right-4 {
   right: 1rem;
 }
 
+.right-5 {
+  right: 1.25rem;
+}
+
+.right-8 {
+  right: 2rem;
+}
+
+.right-6 {
+  right: 1.5rem;
+}
+
+.right-2 {
+  right: 0.5rem;
+}
+
+.right-1\.5 {
+  right: 0.375rem;
+}
+
+.-right-1\.5 {
+  right: -0.375rem;
+}
+
+.right-2\.5 {
+  right: 0.625rem;
+}
+
+.right-3\.5 {
+  right: 0.875rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
+}
+
+.ml-auto {
+  margin-left: auto;
 }
 
 .block {
@@ -631,6 +715,10 @@ video {
   height: 1.25rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .w-64 {
   width: 16rem;
 }
@@ -645,6 +733,10 @@ video {
 
 .w-5 {
   width: 1.25rem;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 .cursor-pointer {
@@ -667,6 +759,12 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .rounded-full {
@@ -758,6 +856,11 @@ video {
   line-height: 1.25rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -789,6 +892,16 @@ video {
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
 .shadow-sm {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
@@ -810,6 +923,11 @@ video {
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
   color: rgb(0 200 118 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .focus\:ring-primary:focus {
