@@ -21,6 +21,8 @@ module.exports = {
         'primary' : '#00c876',
         'primary-100' : '#00c87657',
         'secondary' : '#201630',
+        'secondar-100' : '#2016301c',
+        
       },
       fontFamily: {
       'montserrat' : ['Montserrat'],
