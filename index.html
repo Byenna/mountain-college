@@ -4,12 +4,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind Project </title>
+    <title>Mountain College </title>
     <link rel="stylesheet" href="./output/tailwind.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-        <div class="w-32 h-32 bg-pink-900 m-12 text-white" >
-            Juraia
+      <!-- --------start header ---------- -->
+        <header class="py-4 shadow-sm bg-primary-100 lg:bg-white">
+            <div class="container flex items-center justify-between">
+                <!-- -----------logo------------ -->
+                <a href="./index.html" class="block w-64">
+                    <img src="./images/light-logo.png" alt="logo" class="w-full hidden lg:block">
+                    <img src="./images/berg-logo.svg" alt="berg-logo" class="w-16 flex lg:hidden">
+                </a>
+
+                  <!-- -----------logo------------ -->
+                  <!-- -----------search------------ -->
+
+
+                  <div class="w-full xl:max-w-xl lg:max-w-lg lg:flex relative hidden ">
+
+                    <span class="absolute left-4 top-3 text-lg text-gray-400">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <input type="text" class="pl-12 w-full border border-r-0 border-primary py-3 px-3 rounded-l-md  focus:ring-primary" placeholder="Zoek en gij zult vinden" />
+                    <button type="submit" class="bg-primary border border-primary text-white px-8 font-medium rounded-r-md hover:bg-transparent hover:text-primary transition">
+                        Zoek
+                    </button>
+                  </div>
+
+                  <!-- -----------search end------------ -->
+
+                   <!-- -----------navigation------------ -->
+
+                   <div class="space-x-4 flex items-center">
+                    <a href="#" class="block text-center text-gray-700 hover:text-primary transition relative">
+                        <span class="absolute right-2 -top-1 w-5 h-5 rounded-full flex items-center bg-primary text-white text-xs justify-center">5</span>
+
+                        <div class="text-2xl">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="text-sm font-semibold leading-3">
+                            Verlanglijst
+                        </div>
+                    </a>
+
+                    <a href="#" class="block text-center text-gray-700 hover:text-primary transition relative">
+                        <span class="absolute right-4 -top-1 w-5 h-5 rounded-full flex items-center bg-primary text-white text-xs justify-center">5</span>
+
+                        <div class="text-2xl">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <div class="text-sm font-semibold leading-3">
+                            Winkelwagen
+                        </div>
+                    </a>
+
+                    <a href="#" class="block text-center text-gray-700 hover:text-primary transition relative">
+                      
+
+                        <div class="text-2xl">
+                            <i class="far fa-user"></i>
+                        </div>
+                        <div class="text-sm font-semibold leading-3">
+                           Account
+                        </div>
+                    </a>
+                   </div>
+
+                    <!-- -----------navigation------------ -->           
+                 </div>
+        </header>
+      <!-- --------End header ---------- -->
+      <!-- --------Start NavBar ---------- -->
+
+      <nav class="bg-secondary hidden lg:block">
+        <div class="container">
+            <div class="flex">
+    <!-- --------Start All Categories ---------- -->
+
+    <div class="px-8 py-4 bg-primary flex items-center cursor-pointer group relative">
+        <span class="text-white">
+            <i class="fas fa-bars"></i>
+        </span>
+        <span class="capitalize ml-2 text-white font-semibold">
+            Alle Categorieën
+        </span>
+
+    </div>
+ 
+     <!-- --------End All Categories ---------- -->
+
+     <!-- --------Start Nav Menu---------- -->
+
+    <div class="flex item-center justify-between flex-grow pl-12">
+        <div class="flex items-center space-x-6 text-base capitalize">
+            <a href="./index.html" class="text-gray-300 hover:text-white transition font-semibold">
+                 home
+            </a>
+            <a href="./winkel.html" class="text-gray-300 hover:text-white transition font-semibold">
+                winkel
+           </a>
+           <a href="./index.html" class="text-gray-300 hover:text-white transition font-semibold">
+            over ons
+       </a>
+        <a href="./index.html" class="text-gray-300 hover:text-white transition font-semibold">
+            contact
+        </a>
         </div>
+
+        <div class="flex items-center space-x-6 text-base capitalize">
+            <a href="./login.html" class="ml-auto items-center text-gray-300 hover:text-white transition font-semibold">
+            login/registreer
+            </a>
+       </div>
+    </div>
+
+
+     <!-- --------End Nav Menu---------- -->
+            </div>
+        </div>
+      </nav>
+
+
+
+
+      <!-- --------End NavBar---------- -->
+
 </body>
 </html>
