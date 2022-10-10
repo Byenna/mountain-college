@@ -17,11 +17,30 @@ module.exports = {
       padding : '1rem' // 16px
     },
     extend: {
+      animation : {
+        blob : 'blob 37s ease-in-out infinite',
+      },
+      keyframes : {
+        blob : {
+          '0%' : {
+            transform : 'translate(0px, 0px) scale(1)',
+          },
+          '33%' : {
+            transform : 'translate(0px, -50px) scale(2)',
+          },
+          '66%' : {
+            transform : 'translate(100px, 20px) scale(0.8)',
+          },
+          '100%' : {
+            transform : 'translate(0px, 0px) scale(2)',
+          },
+        },
+      },
       colors : {
         'primary' : '#00c876',
         'primary-100' : '#00c87657',
         'secondary' : '#201630',
-        'secondar-100' : '#2016301c',
+        'secondary-100' : '#2016301c',
         
       },
       fontFamily: {
