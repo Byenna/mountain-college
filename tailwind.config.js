@@ -18,7 +18,7 @@ module.exports = {
     },
     extend: {
       animation : {
-        blob : 'blob 37s ease-in-out infinite',
+        blob : 'blob 37s ease-in-out',
       },
       keyframes : {
         blob : {
@@ -38,7 +38,7 @@ module.exports = {
       },
       colors : {
         'primary' : '#00c876',
-        'primary-100' : '#00c87657',
+        'primary-100' : '#c1f2de',
         'secondary' : '#201630',
         'secondary-100' : '#2016301c',
         
