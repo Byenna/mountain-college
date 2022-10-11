@@ -18,7 +18,7 @@ module.exports = {
     },
     extend: {
       animation : {
-        blob : 'blob 37s ease-in-out',
+        blob : 'blob 7s  infinite',
       },
       keyframes : {
         blob : {
@@ -26,13 +26,13 @@ module.exports = {
             transform : 'translate(0px, 0px) scale(1)',
           },
           '33%' : {
-            transform : 'translate(0px, -50px) scale(2)',
+            transform : 'translate(0px, -50px) scale(1.1)',
           },
           '66%' : {
-            transform : 'translate(100px, 20px) scale(0.8)',
+            transform : 'translate(100px, 20px) scale(0.9)',
           },
           '100%' : {
-            transform : 'translate(0px, 0px) scale(2)',
+            transform : 'translate(0px, 0px) scale(1)',
           },
         },
       },

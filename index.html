@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <body>
       <!-- --------start header ---------- -->
@@ -317,7 +319,7 @@
 
          <!-- --------Start Top New Arrival--------- -->
 
-         <div class="container pb-16">
+         <div class="container pb-32">
             <h2 class="text-2xl font-montserrat my-4 text-secondary md:text-3xl font-bold uppercase"> Nieuwste cursussen</h2>
             <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-6">
                 <!-- --------Start Single Product--------- -->
@@ -482,16 +484,186 @@
          
 
         <!-- --------End Top New Arrival--------- -->
+        <!-- --------Start learning style--------- -->
+        <div class="container pb-32">
+            <h2 class="text-2xl font-montserrat my-4 text-secondary md:text-3xl font-bold uppercase flex justify-center"> Aandacht voor jouw leerstijl</h2>
+            <div class="items-center justify-center px-16 grid lg:grid-cols-2 sm:grid-cols-1">
+            
+            <div class="relative w-full max-w-lg">
+              <div class="absolute top-0 -left-4 w-72 h-72 bg-primary rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+              <div class="absolute top-0 -right-4 w-72 h-72 bg-secondary-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+              <div class="absolute -bottom-8 left-20 w-72 h-72 bg-primary-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+              <div class="m-8 relative space-y-4">
+                <!-- -------Single learning style--1-------- -->
+                
+                <div class="p-5 bg-white rounded-lg flex items-center justify-between space-x-8">
+                    <h4>Denker</h4>
+                  <div class="hidden md:block flex-1">
+        
+                    <p
+                    x-data="{ isCollapsed: false, maxLength: 20, originalContent: '', content: '' }"
+                    x-init="originalContent = $el.firstElementChild.textContent.trim(); content = originalContent.slice(0, maxLength)"
+                    class="text-sm md:text-md"
+                    >
+                    
+                     <span 
+                     x-text="isCollapsed ? originalContent : content"
+                     class="text-gray-800"
+                     >
+                     Leer jij het beste door te kijken en analyseren hoe iets werkt? Dan ben je een denker. Een denker leert het beste door een college te volgen of een voorbeeld filmpje te kijken. Een denker houdt van feiten en theorie en probeert dit samen te vatten in een duidelijk overzicht.</i></span>
+                     <button
+                       @click="isCollapsed = !isCollapsed"
+                       x-show="originalContent.length > maxLength"
+                       x-text="isCollapsed ? '... minder' : '... meer'"
+                       class="text-primary hover:text-secondary text-sm"
+                     ></button>
+                   </p>
+                  </div>
+                  <div>
+                    <a href="#" class="text-sm md:text-md block w-full px-3 text-center text-white bg-primary border border-primary font-medium rounded hover:bg-transparent hover:text-primary transition">Doe de test</a>
+                  </div>
+                </div>
+                <!-- -------End Single learning style---------- -->
+                   <!-- -------Single learning style--2-------- -->
+                
+                   <div class="p-5 bg-white rounded-lg flex items-center justify-between space-x-8">
+                    <h4>Doener</h4>
+                  <div class="hidden md:block flex-1">
+        
+                    <p
+                    x-data="{ isCollapsed: false, maxLength: 20, originalContent: '', content: '' }"
+                    x-init="originalContent = $el.firstElementChild.textContent.trim(); content = originalContent.slice(0, maxLength)"
+                    class="text-sm md:text-md"
+                    >
+                    
+                     <span 
+                     x-text="isCollapsed ? originalContent : content"
+                     class="text-gray-800"
+                     >
+                     Ga je liever direct aan de slag en zie je wel waar het schip strandt? Dan ben je een echte doener. Lekker gelijk de handen uit de mouwen steken en uitproberen, dat werkt het beste voor jou. Als doener voel je zelf hoe iets werkt door gewoon te doen en te experimenteren.</span>
+                     <button
+                       @click="isCollapsed = !isCollapsed"
+                       x-show="originalContent.length > maxLength"
+                       x-text="isCollapsed ? '... minder' : '... meer'"
+                       class="text-primary hover:text-secondary text-sm"
+                     ></button>
+                   </p>
+                  </div>
+                  <div>
+                    <a href="#" class="text-sm md:text-md block w-full px-3 text-center text-white bg-primary border border-primary font-medium rounded hover:bg-transparent hover:text-primary transition">Doe de test</a>
+                  </div>
+                </div>
+                <!-- -------End Single learning style---------- -->
+                   <!-- -------Single learning style--3-------- -->
+                
+                   <div class="p-5 bg-white rounded-lg flex items-center justify-between space-x-8">
+                    <h4>Dromer</h4>
+                  <div class="hidden md:block flex-1">
+        
+                    <p
+                    x-data="{ isCollapsed: false, maxLength: 17, originalContent: '', content: '' }"
+                    x-init="originalContent = $el.firstElementChild.textContent.trim(); content = originalContent.slice(0, maxLength)"
+                    class="text-sm md:text-md"
+                    >
+                    
+                     <span 
+                     x-text="isCollapsed ? originalContent : content"
+                     class="text-gray-800"
+                     >
+                     Dromers kijken graag in plaats van doen en proberen zich vervolgens voor te stellen hoe iets werkt. Een dromer bekijkt dingen graag vanuit verschillende kanten. Brainstormen en ergens mee oefenen nadat het is voorgedaan zijn typische leermethoden van een dromer.</span>
+                     <button
+                       @click="isCollapsed = !isCollapsed"
+                       x-show="originalContent.length > maxLength"
+                       x-text="isCollapsed ? '... minder' : '... meer'"
+                       class="text-primary hover:text-secondary text-sm"
+                     ></button>
+                   </p>
+                  </div>
+                  <div>
+                    <a href="#" class="text-sm md:text-md block w-full px-3 text-center text-white bg-primary border border-primary font-medium rounded hover:bg-transparent hover:text-primary transition">Doe de test</a>
+                  </div>
+                </div>
+                <!-- -------End Single learning style---------- -->
+                   <!-- -------Single learning style--4-------- -->
+                
+                   <div class="p-5 bg-white rounded-lg flex items-center justify-between space-x-8">
+                    <h4>Beslisser</h4>
+                  <div class="hidden md:block flex-1">
+        
+                    <p
+                    x-data="{ isCollapsed: false, maxLength: 17, originalContent: '', content: '' }"
+                    x-init="originalContent = $el.firstElementChild.textContent.trim(); content = originalContent.slice(0, maxLength)"
+                    class="text-sm md:text-md"
+                    >
+                    
+                     <span 
+                     x-text="isCollapsed ? originalContent : content"
+                     class="text-gray-800"
+                     >
+                     Een beslisser denkt graag na over hoe iets werkt in de praktijk. ‘Wat heb ik hier aan?’ en ‘wat kan ik hiermee?’ zijn typische vragen van beslissers. Een beslisser houdt van checklists, schema’s en stappenplannen en voert graag opdrachten uit.</span>
+                     <button
+                       @click="isCollapsed = !isCollapsed"
+                       x-show="originalContent.length > maxLength"
+                       x-text="isCollapsed ? '... minder' : '... meer'"
+                       class="text-primary hover:text-secondary text-sm"
+                     ></button>
+                   </p>
+                  </div>
+                  <div>
+                    <a href="#" class="text-sm md:text-md block w-full px-3 text-center text-white bg-primary border border-primary font-medium rounded hover:bg-transparent hover:text-primary transition">Doe de test</a>
+                  </div>
+                </div>
+                <!-- -------End Single learning style---------- -->
+                
+               
+              </div>
+            </div>
+
+            <div class="relative w-full h-full max-w-lg">
+               
+                <div class="m-8 relative space-y-4">
+                  <div class="p-5 bg-white rounded-lg space-x-8">
+                    
+                      <div class="font-montserrat">
+                        <h4 class="font-bold text-lg pb-2"> Hoe leer jij het beste? Test jezelf!</h4>
+                        <p ></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur beatae rem tempora iure impedit labore placeat possimus ab quibusdam! Id voluptas repudiandae nemo quibusdam aperiam voluptate perferendis sunt, ea laboriosam!</p><br>
+                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur beatae rem tempora iure impedit labore placeat possimus ab quibusdam! Id voluptas repudiandae nemo quibusdam aperiam voluptate perferendis sunt, ea laboriosam!</p>
+                        
+                      </div>
+                    
+                    <div>
+                     
+                  </div>
+                 
+                </div>
+            </div>
 
 
+          </div>
+          <!-- -------End learning style---------- -->
+
+ 
 
 
 <!-- for second banner -->
-<!-- <div class="relative w-full max-w-lg">
+<!-- <div class="relative w-full max-w-lg container">
     <div class="absolute top-56 -left-4 w-72 h-72  bg-secondary-100 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob"></div>
     <div class="absolute top-10 -right-4 w-72 h-72 bg-primary-100 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob"></div>
     <div class="absolute top-96 -bottom-8 left-20 w-72 h-72 bg-primary-100 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob"></div>
-</div> -->
+    <div class="w-full xl:max-w-xl lg:max-w-lg lg:flex relative hidden "> -->
+
+
+        <!-- <span class=" absolute left-4 top-3 text-lg text-gray-400">
+            <i class="fas fa-search"></i>
+        </span>
+        <input type="text" class="pl-12 w-full border border-r-0 border-primary py-3 px-3 rounded-l-md  focus:ring-primary" placeholder="Zoek en gij zult vinden" />
+        <button type="submit" class="bg-primary border border-primary text-white px-8 font-medium rounded-r-md hover:bg-transparent hover:text-primary transition">
+            Zoek
+        </button> -->
+
+
+      <!-- </div> -->
+<!-- </div> -->
 <!-- for second banner -->
 </body>
 </html>
